@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Transaksi Pariwisata</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Halaman Utama</a></li>
+                <li><a href="kebudayaan.html">Kebudayaan</a></li>
+                <li><a href="wisata.html">Tempat Wisata</a></li>
+                <li><a href="hotel.html">Daftar Hotel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Isi Formulir Transaksi</h2>
+            <form id="transactionForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="jumlah">Jumlah Wisatawan:</label>
+                <input type="number" id="jumlah" name="jumlah" required><br><br>
+
+                <label for="tanggal">Tanggal Kunjungan:</label>
+                <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+                <label for="tujuan">Pilih Tujuan Wisata:</label>
+                <select id="tujuan" name="tujuan" required>
+                    <option value="">Pilih tujuan wisata</option>
+                    <option value="Pulau Komodo">Pulau Komodo</option>
+                    <option value="Borobudur">Candi Borobudur</option>
+                    <option value="Raja Ampat">Raja Ampat</option>
+                    <option value="Patung Garuda Wisnu Kencana">Patung Garuda Wisnu Kencana</option>
+                    <option value="Monumen Nasional (Monas)">Monumen Nasional (Monas)</option>
+                    <option value="Bromo">Bromo</option>
+                    <option value="Malioboro">Malioboro</option>
+                </select><br><br>
+
+                <label for="hotel">Pilih Hotel:</label>
+                <select id="hotel" name="hotel" required>
+                    <option value="">Pilih hotel</option>
+                    <option value="AYANA Resort and Spa Bali">AYANA Resort and Spa Bali</option>
+                    <option value="The Lombok Lodge">The Lombok Lodge</option>
+                    <option value="Plataran Borobudur Resort & Spa">Plataran Borobudur Resort & Spa</option>
+                    <option value="Four Seasons Hotel Jakarta">Four Seasons Hotel Jakarta</option>
+                    <option value="Hotel Crowne Plaza Semarang">Hotel Crowne Plaza Semarang</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
